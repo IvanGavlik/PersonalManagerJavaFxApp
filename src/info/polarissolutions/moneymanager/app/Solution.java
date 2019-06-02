@@ -13,7 +13,7 @@ public class Solution extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		primaryStage.setTitle("Money Manager");
+		primaryStage.setTitle("Personal Manager");
 		Navigation.getInstance().setPrimaryStage(primaryStage);
 		Navigation.getInstance().navigate(View.LOGIN);
 		primaryStage.show();

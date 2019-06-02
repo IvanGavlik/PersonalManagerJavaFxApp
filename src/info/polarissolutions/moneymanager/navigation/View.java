@@ -1,14 +1,21 @@
 package info.polarissolutions.moneymanager.navigation;
 
-public enum View {
-	LOGIN(200, 200), MONEY_MANAGER(610, 390);
+public enum View { 
+	LOGIN("/view/login.fxml", 330, 275),
+	MONEY_MANAGER("", 610, 390);
 	
+	private String fileName;
 	private int width;
-	private int height;
+	private int height; 
 	
-	private View(int w, int h) {
-		this.width = w;
-		this.height = h;
+	private View(String fN,int w, int h) {
+		fileName = fN;
+		width = w;
+		height = h;
+	}
+	
+	public String getFileName() {
+		return fileName;
 	}
 	
 	public int getWidth() {
